@@ -46,7 +46,7 @@ tabWillBeOpenedPromise
        return interviewCardClicked;
     }).then(function (){
         //go to warmup card
-        let allTopics = tab.findElements(swd.By.css("a[data-analytics='PlaylistCardItem']"));
+        let allTopics = tab.findElements(swd.By.css(".playlist-card.playlist-card__completed"));
         return allTopics;
     }).then(function (warmUpCard){
        let warmUpCardClicked = warmUpCard[0].click();
